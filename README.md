@@ -1,24 +1,5 @@
-# README
+# Exemplo de Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Code Climate](https://codeclimate.com/github/rodrigorgs/mata62-alo/badges/gpa.svg)](https://codeclimate.com/github/rodrigorgs/mata62-alo)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Exemplo feito na disciplina.
