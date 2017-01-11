@@ -10,13 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161208000912) do
+ActiveRecord::Schema.define(version: 20170111231248) do
+
+  create_table "disciplinas", force: :cascade do |t|
+    t.string   "codigo"
+    t.string   "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "creditos"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string   "titulo"
     t.text     "conteudo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "turmas", force: :cascade do |t|
+    t.integer  "disciplina_id"
+    t.string   "codigo"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["disciplina_id"], name: "index_turmas_on_disciplina_id"
   end
 
 end
